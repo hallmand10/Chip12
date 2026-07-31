@@ -1,0 +1,8 @@
+{
+"name":"Chip12",
+"short_name":"Chip12",
+"display":"standalone",
+"start_url":"index.html",
+"background_color":"#ffffff",
+"description":"Rule of 12 golf chipping calculator"
+}

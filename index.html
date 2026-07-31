@@ -1,52 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Chip12</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chip12</title>
 
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+</head>
+  
 <body>
 
 <div class="container">
-  <h1>Chip12</h1>
-  <p class="subtitle">Rule of 12 Chipping Calculator</p>
 
-  <div class="toggle">
-    <button onclick="setMode('distance')">Distance</button>
-    <button onclick="setMode('slider')">Slider</button>
-  </div>
+<h1>Chip12</h1>
+<p class="subtitle">Rule of 12 Chipping Calculator</p>
 
-  <div id="distanceMode">
-    <label>Distance to hole (feet)</label>
-    <input id="hole" type="number">
-
-    <label>Distance to landing spot (feet)</label>
-    <input id="landing" type="number">
-
-    <button onclick="calculateDistance()">Calculate</button>
-  </div>
-
-  <div id="sliderMode" style="display:none;">
-    <label>Carry Percentage</label>
-    <input id="carrySlider" type="range" min="5" max="95" value="50"
-    oninput="calculateSlider()">
-
-    <p>
-      Carry: <span id="carryValue">50</span>%<br>
-      Roll: <span id="rollValue">50</span>%
-    </p>
-  </div>
-
-  <div class="result">
-    <h2 id="club">Select distance</h2>
-    <p id="ratio"></p>
-  </div>
-
+<div class="toggle">
+<button onclick="setMode('distance')">Distance</button>
+<button onclick="setMode('slider')">Slider</button>
 </div>
 
-<script src="app.js"></script>
-
-</body>
-</html>
+<div id="distanceMode">
